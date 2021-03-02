@@ -1,7 +1,6 @@
 package com.example.sfgpetclinic.services.map;
 
 import com.example.sfgpetclinic.model.Visit;
-import com.example.sfgpetclinic.repositories.VisitRepository;
 import com.example.sfgpetclinic.services.VisitService;
 import org.springframework.stereotype.Service;
 
@@ -9,13 +8,6 @@ import java.util.Set;
 
 @Service
 public class VisitServiceMap extends AbstractServiceMap<Visit, Long> implements VisitService {
-
-    private final VisitService visitService;
-
-    public VisitServiceMap(VisitService visitService) {
-        this.visitService = visitService;
-    }
-
     @Override
     public Set<Visit> findAll() {
         return super.findAll();
