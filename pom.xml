@@ -19,6 +19,7 @@
     <description>SFG Pet Clinic</description>
     <properties>
         <java.version>15</java.version>
+        <mockito.version>2.24.0</mockito.version>
     </properties>
 
     <dependencies>
