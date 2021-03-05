@@ -83,7 +83,7 @@ class OwnerControllerTest {
 
     @Test
     void processFindFormEmptyReturnMany() throws Exception {
-        when(ownerService.findAllByLastNameLike(anyString()))
+        when(ownerService.findAllByLastNameLike("%%"))
                 .thenReturn(Arrays.asList(Owner.builder().id(1L).build(),
                         Owner.builder().id(2L).build()));
 
@@ -139,5 +139,4 @@ class OwnerControllerTest {
 
         Mockito.verify(ownerService).save(ArgumentMatchers.any());
     }
-
 }
